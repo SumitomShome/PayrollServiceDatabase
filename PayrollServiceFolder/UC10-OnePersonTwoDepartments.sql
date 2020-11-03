@@ -23,3 +23,5 @@ Department varchar (150)
 INSERT INTO Employee_Department VALUES
 ('Terisa', 'Sales'),
 ('Terisa', 'Marketing')
+USE payroll_service_db
+SELECT * FROM Employee_Details inner join Employee_Department ON Employee_Details.name = Employee_Department.name
