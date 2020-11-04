@@ -14,14 +14,14 @@ Income_Tax money,
 Net_Pay money
 );
 INSERT INTO Employee_Details (name, salary, start, gender, Phone_number, Address) VALUES
-('Terisa', 2000000.00, '2019-02-04', 'F', '8900000000', 'Mumbai') 
+('Emma', 2000000.00, '2019-02-04', 'F', '8900000000', 'London') 
 CREATE TABLE Employee_Department
 (
 name varchar(25) not null,
 Department varchar (150)
 );
 INSERT INTO Employee_Department VALUES
-('Terisa', 'Sales'),
-('Terisa', 'Marketing')
-USE payroll_service_db
+('Emma', 'Sales'),
+('Emma', 'Marketing')
 SELECT * FROM Employee_Details inner join Employee_Department ON Employee_Details.name = Employee_Department.name
+SELECT * FROM Employee_Details
